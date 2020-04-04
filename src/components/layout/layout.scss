@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Montserrat&display=swap');
+@import '../style/variables.scss';
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
+
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 1.0875rem;
+}
+
+
+a {
+  text-decoration: none;
+  color:inherit;
+  &:visited {
+    color: inherit;
+  }
+
+  &:active {
+    color: $dark-primary;
+  }
+  
+}
+
